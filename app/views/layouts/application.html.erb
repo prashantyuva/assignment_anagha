@@ -15,6 +15,10 @@
         <%= flash[:alert] %>
         <%= flash[:notice] %>
       </div>
+      <div class="text-right m-4">
+        <%= link_to 'CSV Upload', csv_path, class: 'btn btn-info' %>
+        <%= link_to 'Questions', index_path, class: 'btn btn-info' %>
+      </div>
       <%= yield %>
     </div>
   </body>

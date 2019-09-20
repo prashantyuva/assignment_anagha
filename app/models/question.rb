@@ -1,4 +1,6 @@
 class Question < ApplicationRecord
+  default_scope { order(:id) }
+  
   belongs_to :mapping
   belongs_to :role
 
