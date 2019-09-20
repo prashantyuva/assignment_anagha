@@ -14,3 +14,12 @@
  *= require_self
  */
 @import "bootstrap";
+
+.pagination {
+  float: right;
+  * {
+    border: 1px solid #333;
+    margin: 5px 2px;
+    padding: 0px 5px;
+  }
+}

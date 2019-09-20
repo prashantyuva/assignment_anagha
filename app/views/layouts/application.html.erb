@@ -10,10 +10,12 @@
   </head>
 
   <body>
-    <div class="col-md-12">
-      <div class="container">
-        <%= yield %>
+    <div class="col-md-12 mt-4">
+      <div class="text-center mt-4">
+        <%= flash[:alert] %>
+        <%= flash[:notice] %>
       </div>
+      <%= yield %>
     </div>
   </body>
 </html>

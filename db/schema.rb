@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20190920083156) do
   create_table "questions", force: :cascade do |t|
     t.string "que_text"
     t.integer "priority", default: 1
-    t.integer "que_type", default: 0
-    t.integer "conditions", default: 0
+    t.string "que_type", default: "Rating scale"
+    t.string "conditions", default: "Always"
     t.boolean "required", default: false
     t.string "teaming_stages"
     t.integer "appears"

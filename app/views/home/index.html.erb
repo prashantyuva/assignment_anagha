@@ -1,21 +1,2 @@
-<%#= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
-<div class="col-6 card m-auto top-40">
-  <div class="card-body text-center">
-    <h3>Upload CSV</h3>
-    <%= form_tag csv_path, multipart: true do%>
-      <div class="form-group">
-        <%= file_field_tag 'questions_csv', class: 'p-2 file-border' %>     
-      </div>
-      <%= button_tag 'Upload', class: 'btn btn-info' %>
-    <% end %>
-  </div>
-</div>
-
-<style>
-  .top-40 {
-    top: 40px;
-  }
-  .file-border {
-    border: 1px solid black;
-  }
-</style>
+<%= react_component("QuestionsIndex", { questions: @questions.as_json }) %>
+<%= will_paginate @questions %>

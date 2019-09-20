@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :home
+  resource :home
+  get '/index', to: 'home#index'
+  match '/csv', to: 'home#process_csv', via: [:get, :post]
 
-  post '/csv', to: 'home#process_csv'
-
-  root to: 'home#index'
+  root to: 'home#process_csv'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

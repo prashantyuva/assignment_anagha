@@ -59,3 +59,5 @@ gem 'react-rails'
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
+
+gem 'will_paginate', '~> 3.1.0'
