@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 20190920083156) do
     t.integer "que_type", default: 0
     t.integer "conditions", default: 0
     t.boolean "required", default: false
+    t.string "teaming_stages"
+    t.integer "appears"
+    t.integer "frequency"
     t.integer "role_id"
     t.integer "mapping_id"
     t.datetime "created_at", null: false
